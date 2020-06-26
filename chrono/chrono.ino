@@ -24,8 +24,13 @@ void loop(){
   delay(1000);
   nombre += 1;
 
-  if ((40 + nombre) % 100 == 0)
+  if ((40 + nombre) % 100 == 0) // Quand le nombre arrive à 60 on le remplace immédiatement par la centaine suivante ce qui équivault à la minute.
   {
     nombre += 40;
+  }
+
+  if (nombre == 5959) // Quand la limite d'espace est atteinte, 59 min 59 sec, et non pas 60 sec sinon il passe directement à la centaine suivante en exécutant le premier «if» on arrête tout.
+  {
+    exit(0);
   }
 }
