@@ -1,5 +1,5 @@
 /*Code by Nitsugua38*/
-#include <Keypad.h>
+#include <Keypad.h> // Vous devez ajouter la librairie «Keypad» à votre Arduino disponible sur mon GitHub
 
 #define L1 9
 #define L2 8
